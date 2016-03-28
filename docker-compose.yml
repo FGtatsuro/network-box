@@ -1,0 +1,9 @@
+version: '2'
+services:
+  iptables:
+    build:
+      context: ./iptables
+    container_name: iptables
+    cap_add:
+      - NET_ADMIN
+    network_mode: 'host'
